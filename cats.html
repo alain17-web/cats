@@ -26,7 +26,7 @@
         $.get("https://catfact.ninja/fact",
         "",
         function success(data, status) {
-            let funFact = JSON.stringify(data);
+            let funFact = JSON.stringify(data.fact);
             console.log(typeof funFact);
              console.log(funFact);
              ajouterFunFact(funFact);
